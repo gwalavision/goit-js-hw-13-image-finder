@@ -1,0 +1,26 @@
+{{#each hits}}
+<li class="pictures-list-item col" style="list-style: none;">
+    <div class="photo-card ">
+        <img class="photo-image mb-3" src="{{webformatURL}}" alt="" />
+
+        <div class="stats d-flex justify-content-between align-items-baseline">
+            <p class="stats-item">
+                <i class="material-icons">thumb_up</i>
+                {{likes}}
+            </p>
+            <p class="stats-item">
+                <i class="material-icons">visibility</i>
+                {{views}}
+            </p>
+            <p class="stats-item">
+                <i class="material-icons">comment</i>
+                {{comments}}
+            </p>
+            <p class="stats-item">
+                <i class="material-icons">cloud_download</i>
+                {{downloads}}
+            </p>
+        </div>
+    </div>
+</li>
+{{/each}}
